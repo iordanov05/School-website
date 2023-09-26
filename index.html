@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="1А Класс">
+
+  <title>1А Класс</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="fonts/ralewayregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-slab-v11-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ralewaymedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ralewaybold.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header"> 
+    <a class="page-header__open-btn" href="#" aria-label="Открыть меню">
+      <svg width="22" height="16">
+        <use xlink:href="images/sprite.svg#menu-btn"></use>
+      </svg>
+    </a>
+    
+    
+    <nav class="page-header__nav hide" id="menu">
+    
+      <div class="page-header__container">
+
+        <a class="page-header__close-btn" href="#" aria-label="Закрыть меню">
+          <svg width="22" height="22">
+            <use xlink:href="images/sprite.svg#menu-close-btn"></use>
+          </svg>
+        </a>
+
+        <ul class="page-header__user-menu">
+          <li class="page-header__user-item">
+            <a class="page-header__user-link page-header__user-link--user" href="index.html">
+              <span><b>Главная</b></span>
+            </a>
+          </li>
+
+          <li class="page-header__user-item">
+            <a class="page-header__user-link page-header__user-link--val" href="ourklass.html">
+              <span><b>Наш класс</b></span>
+            </a>
+          </li>
+
+          <li class="page-header__user-item">
+            <a class="page-header__user-link page-header__user-link--lang" href="dost.html"
+              aria-label="Язык сайта"><span><b>Наши достижения</b></span>
+            </a>
+          </li>
+
+          <li class="page-header__user-item">
+            <a class="page-header__user-link page-header__user-link--lang" href="http://www.kursk-gim25.ru/" target="_blank"
+              aria-label="Язык сайта"><span><b>Гимназия №25</b></span>
+            </a>
+          </li>
+
+        </ul>
+
+        <a class="page-header__open-btn page-header__open-btn--about" href="#" aria-label="Открыть меню">
+          <svg width="22" height="16">
+            <use xlink:href="images/sprite.svg#menu-btn"></use>
+          </svg>
+        </a>
+        <div class="page-header__about-menu-wrapper hide">
+          <a class="page-header__close-btn page-header__close-btn--about" href="#" aria-label="Закрыть меню">
+            <svg width="22" height="22">
+              <use xlink:href="images/sprite.svg#menu-close-btn"></use>
+            </svg>
+          </a>
+        
+        </div>
+        <a class="page-header__phone phone" href="tel:+7 906 691 37-13">
+          <span class="page-header__number phone__number">8 906 691 37-13</span>
+          <span class="page-header__text phone__text">Круглосуточная поддержка</span>
+        </a> 
+        <ul class="page-header__social-list social-menu">
+          <li class="page-header__social-item social-menu__item">
+            <a href="https://vk.com/25gymnasium" class="page-header__social-link social-menu__link social-menu__link--vk"
+              target="_blank" aria-label="Вконтакте"><svg class="social-menu__icon" width="18" height="11">
+                <use xlink:href="images/sprite.svg#vk"></use>
+              </svg></a>
+          </li>
+          <!-- <li class="page-header__social-item">
+            <a href="" class="page-header__social-link social-menu__link social-menu__link--ok"
+              aria-label="Одноклассники"><svg class="social-menu__icon" width="10" height="16">
+                <use xlink:href="images/sprite.svg#ok"></use>
+              </svg></a>
+          </li> -->
+          <li class="page-header__social-item">
+            <a href="https://www.youtube.com/channel/UCf6ZxmL3LRzXZuUb4cvEw0w" class="page-header__social-link social-menu__link social-menu__link--yt"
+              target="_blank" aria-label="Youtube"><svg class="social-menu__icon" width="15" height="18">
+                <use xlink:href="images/sprite.svg#yt"></use>
+              </svg></a>
+          </li>
+          <li class="page-header__social-item">
+            <a href="https://www.instagram.com/gymnasium25/" class="page-header__social-link social-menu__link social-menu__link--inst"
+              target="_blank"aria-label="Instagram"><svg class="social-menu__icon" width="14" height="14">
+                <use xlink:href="images/sprite.svg#inst"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+    
+  </header>
+  <main class="content">
+    <h1 class="visually-hidden">Сайт компании "1А класс"</h1>
+    <section class="heading">
+      <div class="heading__bg">
+        <div class="heading__wrapper">
+          <h2 class="section-title heading__title">
+            <span>МБОУ «Гимназия №25»</span>
+            <span>1А КЛАСС</span>
+          </h2>
+
+          <!-- <a class="heading__btn btn" href="#">Выбрать круиз</a> -->
+        </div>
+      </div>
+
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <h2 class="section-title catalog__title">Новости</h2>
+
+        <!-- <div class="catalog__sorting">
+          <p class="catalog__sorting-text">Сортировать круизы по </p>
+          <p class="catalog__sorting__values">
+            <span>цене</span>
+            <svg class="catalog__sorting__icon catalog__sorting__icon--arrow" width="9" height="6">
+              <use xlink:href="images/sprite.svg#down"></use>
+            </svg>
+          </p>
+        </div> -->
+
+        <ul class="catalog__list">
+          <li class="catalog__item">
+
+            <div class="slider">
+              <div class="item">
+                  <img src="images/a1-min.jpeg" alt="Первый слайд">
+              </div>
+          
+              <div class="item">
+                  <img src="images/a2-min.jpeg" alt="Второй слайд">
+              </div>
+          
+              <div class="item">
+                  <img src="images/a3-min.jpeg" alt="Третий слайд">
+              </div>
+              <div class="item">
+                <img src="images/a4-min.jpeg" alt="Третий слайд">
+            </div>
+          
+              <a class="prev" onclick="minusSlide()">&#10094;</a>
+              <a class="next" onclick="plusSlide()">&#10095;</a>
+          </div>
+          <br>
+          
+          <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+              <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+              <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+              <span class="slider-dots_item" onclick="currentSlide(4)"></span> 
+          </div>
+
+            <div class="catalog-item__wrapper">
+              <!-- <a class="catalog__item-link" href="#">
+                <svg class="catalog__item-arrow" width="9" height="6">
+                  <use xlink:href="images/sprite.svg#down"></use>
+                </svg>
+              </a> -->
+              <h3 class="catalog__item-title" style=" text-align: center;">Прощай Азбука!</h3>
+
+              <div class="catalog__item-description">
+                <p class="catalog__item__part" style="font-size: 14px; ">
+                  4 марта 2021 года у нас в 1 классе А прошёл праздник
+
+                  «Прощай Азбука»!
+                  
+                  На празднике мы провели защиту коллективного проекта
+                  
+                  «Наша Азбука»
+                  Работая над созданием книги мы изучили сначала наш учебник «Азбука», узнали как составляется каждая страница и отметили, что странички похожи друг на друга, только задания разные.
+                  
+                  Мы узнали, что на каждой странице обязательно должна быть буква и задания на эту букву. Мы решили, что наша азбука будет весёлой и занимательной. На каждой странице поместили загадки, скороговорки, ребусы, детские стихи.
+                  
+                  Наша азбука ещё и познавательная. На страницах азбуки вы прочитаете не только стихи, но и узнаете лексическое значение слов, узнаете правописание некоторых словарных слов.
+                  
+                  Нашу азбуку можно читать всем классом, так как страницы в ней мы не стали сшивать и поэтому она ещё и подвижная.
+                  
+                  Наша азбука ещё и обучающая: на её страницах не только буква, но и рядом «звуковичок», который поможет узнать ребятам, которые только учатся читать, какие звуки обозначает эта буква.
+                  
+                  С нашей азбукой можно поиграть!<br>
+                  К заключительной части праздника все дети получили удостоверения.<br>
+                </p>
+                <p class="catalog__item__part" style="font-size: 14px; text-align: center";>
+              
+                  
+                  В том, что мы Азбуку прочли,<br>
+                  
+                  Полный курс наук прошли.<br>
+                  
+                  И теперь без передышки<br>
+                  
+                  Мы прочтём любые книжки.<br>
+                </p>
+              </div>
+              <!-- <p class="catalog__item-price">
+                <span class="catalog__item-price-current">14 800 руб.</span>
+              </p> -->
+            </div>
+          </li>
+          <li class="catalog__item">
+
+            <picture>
+              <source type="image/webp" media="(min-width: 1210px)"
+                srcset="images/muz-min.jpeg 1x, images/muz-min.jpeg 2x">
+              <source media="(min-width: 1210px)" srcset="images/muz-min.jpeg 1x, images/muz-min.jpeg 2x">
+
+              <source type="image/webp" media="(min-width: 780px)"
+                srcset="images/muz-min.jpeg 1x, images/muz-min.jpeg 2x">
+              <source media="(min-width: 780px)" srcset="images/muz-min.jpeg 1x, images/muz-min.jpeg 2x">
+
+              <source srcset="images/muz-min.jpeg 1x, images/muz-min.jpeg 2x" type="image/webp">
+              <img class="catalog__item-img" width="290" height="228" src="images/muz-min.jpeg"
+                srcset="images/muz-min.jpeg 2x" >
+            </picture>
+
+            <div class="catalog-item__wrapper">
+              <!-- <a class="catalog__item-link" href="#">
+                <svg class="catalog__item-arrow" width="9" height="6">
+                  <use xlink:href="images/sprite.svg#down"></use>
+                </svg>
+              </a> -->
+              <h3 class="catalog__item-title"style=" text-align: center;">День освобождения Курска от немецко-фашистских захватчиков</h3>
+
+              <div class="catalog__item-description">
+                <p class="catalog__item__part" style="font-size: 14px; ">
+                  8 февраля – День освобождения Курска от немецко-фашистских захватчиков.<br>
+
+                  8 февраля 1943 года — особая памятная дата в истории родного города. В этот день Курск был освобождён от фашистских захватчиков. Мы гордимся боевой славой наших ветеранов, героизмом всех тех, кто принёс долгожданный мир. Мы низко склоняем головы перед вечной памятью павших. Уважаемые ветераны Великой Отечественной войны, бывшие узники фашистских концлагерей, партизаны и подпольщики, труженики тыла!
+                  <br>
+                  В память об этой дате ученики 1А класса посетили тематическую экскурсию, подготовленную Советом музея.
+                  <br>
+                </div>
+              <!-- <p class="catalog__item-price">
+                <span class="catalog__item-price-current">14 800 руб.</span>
+              </p> -->
+            </div>
+          </li>
+          <li class="catalog__item">
+
+            <picture>
+              <source type="image/webp" media="(min-width: 1210px)"
+                srcset="images/ptiz-min.jpeg 1x, images/ptiz-min.jpeg 2x">
+              <source media="(min-width: 1210px)" srcset="images/ptiz-min.jpeg 1x, images/ptiz-min.jpeg 2x">
+
+              <source type="image/webp" media="(min-width: 780px)"
+                srcset="images/ptiz-min.jpeg 1x, images/ptiz-min.jpeg 2x">
+              <source media="(min-width: 780px)" srcset="images/ptiz-min.jpeg 1x, images/ptiz-min.jpeg 2x">
+
+              <source srcset="images/ptiz-min.jpeg 1x, images/ptiz-min.jpeg 2x" type="image/webp">
+              <img class="catalog__item-img" width="290" height="228" src="images/ptiz-min.jpeg"
+                srcset="images/ptiz-min.jpeg 2x" >
+            </picture>
+
+            <div class="catalog-item__wrapper">
+              <!-- <a class="catalog__item-link" href="#">
+                <svg class="catalog__item-arrow" width="9" height="6">
+                  <use xlink:href="images/sprite.svg#down"></use>
+                </svg>
+              </a> -->
+              <h3 class="catalog__item-title"style=" text-align: center;">Покормите птиц зимой</h3>
+
+              <div class="catalog__item-description">
+                <p class="catalog__item__part" style="font-size: 14px; ">
+                  В январе ребята 1 класса А приняли участие в акции «Покормите птиц зимой». Перед тем, как вывешивать кормушки на территории гимназии, дети познакомились с правилами подкормки птиц. Дети заботливо относятся к птицам и ежедневно дежурят в «Птичьей столовой», чистят кормушки, пополняют их собранным кормом. В ходе проведения акции, дети поняли, что они делают хорошее дело – помогают выжить птицам в самое трудное время года. В итоге проведённой акции дети узнали: - какие виды птиц остаются зимовать в наших краях, а какие прилетают к нам на зиму; - как различить птиц по окраске; - какие корма предпочитают птицы. А 27 февраля дети участвовали во всероссийской олимпиаде «Человек и природа» по направлению «Птицы»</p>
+
+              </div>
+              <!-- <p class="catalog__item-price">
+                <span class="catalog__item-price-current">14 800 руб.</span>
+              </p> -->
+            </div>
+          </li>
+          <li class="catalog__item">
+
+            <div class="slider1">
+              <div class="item1">
+                  <img src="images/IMG_1611-min.jpeg" alt="Первый слайд">
+              </div>
+          
+              <div class="item1">
+                  <img src="images/IMG_1610-min.jpeg" alt="Второй слайд">
+              </div>
+          
+              <div class="item1">
+                  <img src="images/IMG_1618-min.jpeg" alt="Третий слайд">
+              </div>
+          
+              <a class="prev1" onclick="minusSlide1()">&#10094;</a>
+              <a class="next1" onclick="plusSlide1()">&#10095;</a>
+          </div>
+          <br>
+          
+          <div class="slider-dots1">
+            <span class="slider-dots_item1" onclick="currentSlide1(1)"></span> 
+              <span class="slider-dots_item1" onclick="currentSlide1(2)"></span> 
+              <span class="slider-dots_item1" onclick="currentSlide1(3)"></span> 
+          </div>
+
+            <div class="catalog-item__wrapper">
+              <!-- <a class="catalog__item-link" href="#">
+                <svg class="catalog__item-arrow" width="9" height="6">
+                  <use xlink:href="images/sprite.svg#down"></use>
+                </svg>
+              </a> -->
+              <h3 class="catalog__item-title" style=" text-align: center;"> Новый год</h3>
+
+              <div class="catalog__item-description"> 
+                <p class="catalog__item__part"style=" font-size: 14px;">
+                  Новый год – самый любимый, добрый, сказочный праздник, который ждут в каждом доме, в каждой семье. Но никто так искренне не ждёт Новогоднего чуда, волшебных превращений и приключений, как дети. Люди в Новый год становятся добрее и счастливее. В волшебную ночь у сверкающих огнями ёлок все веселятся и загадывают желания.
+
+27 декабря новогодний праздник проходил в украшенном кабинете №24
+
+Дети пришли на праздник нарядные, весёлые в предвкушении праздника. И их надежды оправдались. Учитель и родители учащихся, постарались создать для детей новогоднее настроение. А уж дети проявили себя хорошими артистами, показав всё своё творческое мастерство, артистизм, задор и организаторские способности. Им пришлось перевоплотиться в разных героев, петь новогодние песни, танцевать. участвовать в конкурсах и викторинах. Праздник удался на славу!!!
+                </p>
+              </div>
+              <!-- <p class="catalog__item-price">
+                <span class="catalog__item-price-current">14 800 руб.</span>
+              </p> -->
+            </div>
+          </li>
+          <li class="catalog__item">
+
+            <picture>
+              <source type="image/webp" media="(min-width: 1210px)"
+                srcset="images/uchi_ru.png 1x, images/uchi_ru.png 2x">
+              <source media="(min-width: 1210px)" srcset="images/uchi_ru.png 1x, images/uchi_ru.png 2x">
+
+              <source type="image/webp" media="(min-width: 780px)"
+                srcset="images/uchi_ru.png 1x, images/uchi_ru.png 2x">
+              <source media="(min-width: 780px)" srcset="images/uchi_ru.png 1x, images/uchi_ru.png 2x">
+
+              <source srcset="images/uchi_ru.png 1x, images/uchi_ru.png 2x" type="image/webp">
+              <img class="catalog__item-img" width="290" height="228" src="images/uchi_ru.png"
+                srcset="images/uchi_ru.png 2x" >
+            </picture>
+
+            <div class="catalog-item__wrapper">
+              <!-- <a class="catalog__item-link" href="#">
+                <svg class="catalog__item-arrow" width="9" height="6">
+                  <use xlink:href="images/sprite.svg#down"></use>
+                </svg>
+              </a> -->
+              <h3 class="catalog__item-title"style=" text-align: center;">УЧИ.РУ</h3>
+
+              <div class="catalog__item-description">
+                <p class="catalog__item__part" style="font-size: 14px;">
+                  С сентября 2020 года все ребята класса были зарегистрированы на образовательной платформе УЧИ.РУ
+
+Ежедневно учитель Алифанова Ирина Михайловна включает функцию «Начать урок» , и ученики с удовольствием решают карточки по учебным предметам, а также активно участвуют в различных марафонах и олимпиадах. В рейтинге гимназии мы устойчиво держимся на 3 месте! Среди учеников класса очень много победителей и призёров!!! Молодцы, ребята!!!</p>
+
+              </div>
+              <!-- <p class="catalog__item-price">
+                <span class="catalog__item-price-current">14 800 руб.</span>
+              </p> -->
+            </div>
+          </li>
+          <li class="catalog__item">
+
+            <picture>
+              <source type="image/webp" media="(min-width: 1210px)"
+                srcset="images/1.jpeg 1x, images/1.jpeg 2x">
+              <source media="(min-width: 1210px)" srcset="images/1.jpeg 1x, images/1.jpeg 2x">
+
+              <source type="image/webp" media="(min-width: 780px)"
+                srcset="images/1.jpeg 1x, images/1.jpeg 2x">
+              <source media="(min-width: 780px)" srcset="images/1.jpeg 1x, images/1.jpeg 2x">
+
+              <source srcset="images/1.jpeg 1x, images/1.jpeg 2x" type="image/webp">
+              <img class="catalog__item-img" width="290" height="228" src="images/1.jpeg"
+                srcset="images/1.jpeg 2x" >
+            </picture>
+
+            <div class="catalog-item__wrapper">
+              <!-- <a class="catalog__item-link" href="#">
+                <svg class="catalog__item-arrow" width="9" height="6">
+                  <use xlink:href="images/sprite.svg#down"></use>
+                </svg>
+              </a> -->
+              <h3 class="catalog__item-title"style=" text-align: center;">Знакомьтесь, 1 класс А!</h3>
+
+              <div class="catalog__item-description">
+                <p class="catalog__item__part" style="font-size: 14px; text-align: center;">
+                  Класс был сформирован 1 сентября 2020 года.
+Всего в классе 28 человек, из них 13 мальчиков и 15 девочек.
+ В основном учащиеся 2013 года рождения.</p>
+<p class="catalog__item__part" style="font-size: 14px; text-align: center;"> 1А – это:<br>
+28 пар быстрых ножек,<br>
+28 пар шустрых ручек,<br>
+28 умных голов<br>
+И 28 восхитительных улыбок!<br>
+Гимназия всех нас собрала,<br>
+Ключ от знаний нам дала.<br>
+Мы веселые, красивые<br>
+И в меру шаловливые.<br>
+Забавные, счастливые<br>
+И вовсе не ленивые!<br>
+                </p>
+              </div>
+              <!-- <p class="catalog__item-price">
+                <span class="catalog__item-price-current">14 800 руб.</span>
+              </p> -->
+            </div>
+          </li>
+          
+          
+        </ul>
+        <!-- <a class="btn catalog__btn" href="#">
+          <span class="catalog__btn-text">Больше круизов</span>
+
+          <svg class="catalog__btn-arrow" width="9" height="6">
+            <use xlink:href="images/sprite.svg#down"></use>
+          </svg>
+        </a> -->
+      </div>
+    </section>
+
+  </main>
+  <footer class="page-footer container">
+    <ul class="page-footer__about-menu about-menu">
+      <li class="page-footer__about-item about-menu__item"><a href="tel:+7 906 691-37-13" class="page-footer__link about-menu__link"><b>8 906 691-37-13</b></a></li>
+      <li class="page-footer__about-item about-menu__item"><p href="" class="page-footer__link about-menu__link">Круглосуточная поддержка</p></li>
+      
+    </ul> 
+ 
+    <div class="page-footer__wrapper">
+      <p class="page-footer__text">Будь на связи:</p>
+      <ul class="page-footer__social-list social-menu">
+        <li class="page-footer__social-item social-menu__item">
+          <a href="https://vk.com/25gymnasium" class="page-footer__social-link social-menu__link social-menu__link--vk" aria-label="Вконтакте" target="_blank">
+            <svg class="social-menu__icon" width="18" height="11">
+              <use xlink:href="images/sprite.svg#vk"></use>
+            </svg></a>
+        </li>
+        <!-- <li class="page-footer__social-item">
+          <a href="" class="page-footer__social-link social-menu__link social-menu__link--ok"
+            aria-label="Одноклассники">
+            <svg class="social-menu__icon" width="10" height="16">
+              <use xlink:href="images/sprite.svg#ok"></use>
+            </svg></a>
+        </li>  -->
+        <li class="page-footer__social-item">
+          <a href="https://www.youtube.com/channel/UCf6ZxmL3LRzXZuUb4cvEw0w" class="page-footer__social-link social-menu__link social-menu__link--yt" aria-label="Youtube" target="_blank">
+            <svg class="social-menu__icon" width="15" height="18">
+              <use xlink:href="images/sprite.svg#yt"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a href="https://www.instagram.com/gymnasium25/" class="page-footer__social-link social-menu__link social-menu__link--inst" aria-label="Instagram" target="_blank">
+            <svg class="social-menu__icon" width="14" height="14">
+              <use xlink:href="images/sprite.svg#inst"></use>
+            </svg></a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="page-footer__wrapper page-footer__wrapper--phone">
+      <a class="page-footer__phone phone" href="http://www.kursk-gim25.ru/" target="_blank">
+        <span class="page-footer__number phone__number">Гимназия №25</span> 
+        <!-- <span class="page-footer__text phone__text"></span> -->
+      </a>
+
+      <p class="page-footer__copy">© 2021 OOO «1А Класс»</p>
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script> 
+</body>
+
+</html>

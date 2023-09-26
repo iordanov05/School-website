@@ -1,0 +1,1051 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/ralewayregular.woff2) format("woff2"), url(../fonts/ralewayregular.woff) format("woff");
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/ralewaymedium.woff2) format("woff2"), url(../fonts/ralewaymedium.woff) format("woff");
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/ralewaybold.woff2) format("woff2"), url(../fonts/ralewaybold.woff) format("woff");
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/roboto-slab-v11-latin_cyrillic-regular.woff2) format("woff2"), url(../fonts/roboto-slab-v11-latin_cyrillic-regular.woff) format("woff");
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Raleway", Arial, sans-serif;
+    color: #0d3351;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+.container {
+    padding: 0 15px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-style: normal;
+    letter-spacing: .055em;
+    color: #fff;
+    width: 202px;
+    text-align: center;
+    background-color: #37c8fd;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.btn, .phone {
+    display: block;
+}
+.phone__number, .phone__text {
+    display: block;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Raleway", "Arial", sans-serif;
+    color: #000000;
+    letter-spacing: .05em;
+}
+.phone__text {
+    font-weight: 500;
+    font-size: 10px;
+}
+.about-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.about-menu__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Raleway", "Arial", sans-serif;
+    color: #0d3351;
+    letter-spacing: .05em;
+}
+.social-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.social-menu__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0d3351;
+    position: relative;
+}
+.social-menu__link .social-menu__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content {
+    background-color: #f3f3f3;
+}
+.heading {
+    padding-bottom: 40px;
+}
+.heading__bg {
+    height: 438px;
+    /* background-image: url(../images/title-mobile.jpg); */
+    background-image: url(../images/109-min-mob.jpg);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    background-position: center bottom;
+    background-size: 100%}
+    
+@media (-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx) {
+    .heading__bg {
+        padding-top: 30px;
+    /* background-image: url(../images/title-mobile@2x.jpg); */
+    background-image: url(../images/109-min-mob.jpg);
+}
+}.heading__wrapper {
+    padding: 105px 20px 215px;
+   /*background-image: url("data:image/svg+xml, %3Csvg width='49' height='221' viewBox='0 0 49 221' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.1426 130.5L0.14605 130.383L2.1426 130.5ZM8.1426 158L6.4466 159.06H6.4466L8.1426 158ZM27.6426 193L29.6135 192.66L27.6426 193ZM31.1367 220.653C31.2253 219.501 31.3007 217.889 31.3314 215.938L27.3319 215.875C27.3021 217.765 27.2295 219.294 27.1485 220.347L31.1367 220.653ZM31.3174 211.265C31.2594 208.464 31.1079 205.293 30.8092 201.945L26.825 202.301C27.1147 205.547 27.2619 208.626 27.3182 211.347L31.3174 211.265ZM30.3065 197.296C30.1107 195.764 29.8813 194.214 29.6135 192.66L25.6717 193.34C25.9288 194.831 26.1497 196.324 26.3388 197.803L30.3065 197.296ZM29.6135 192.66C29.2206 190.381 28.5557 188.085 27.7123 185.823L23.9644 187.221C24.7408 189.303 25.3296 191.356 25.6717 193.34L29.6135 192.66ZM24.8759 179.459C22.7102 175.235 20.1312 171.213 17.7169 167.74L14.4327 170.024C16.79 173.414 19.2615 177.275 21.3163 181.284L24.8759 179.459ZM13.7243 162.227C11.8048 159.659 10.4319 157.889 9.83859 156.94L6.4466 159.06C7.15756 160.198 8.72181 162.216 10.5205 164.622L13.7243 162.227ZM9.8386 156.94C9.11903 155.789 8.31936 154.561 7.52057 152.972L3.94683 154.769C4.84802 156.561 5.76444 157.969 6.4466 159.06L9.8386 156.94ZM5.83647 148.838C5.0902 146.507 4.46866 143.603 4.17757 139.906L0.189908 140.22C0.503567 144.203 1.18028 147.413 2.02695 150.058L5.83647 148.838ZM4.00008 135.282C3.99782 133.829 4.04156 132.276 4.13915 130.617L0.14605 130.383C0.0439899 132.118 -0.00230742 133.75 8.83341e-05 135.288L4.00008 135.282ZM4.13915 130.617C4.22575 129.145 4.48258 127.578 4.89001 125.938L1.00796 124.974C0.553095 126.805 0.249776 128.619 0.14605 130.383L4.13915 130.617ZM6.36332 121.288C7.48301 118.331 8.95016 115.291 10.6099 112.301L7.11255 110.36C5.38447 113.473 3.82687 116.691 2.62249 119.871L6.36332 121.288ZM13.157 107.978C15.0026 105.01 16.9536 102.186 18.8303 99.6521L15.6157 97.2717C13.6842 99.88 11.6709 102.793 9.76043 105.865L13.157 107.978ZM21.9082 95.6599C23.0911 94.1876 24.1863 92.8958 25.1356 91.8307L22.1496 89.1693C21.1503 90.2904 20.011 91.6348 18.7899 93.1546L21.9082 95.6599ZM25.1356 91.8307C26.1746 90.665 27.4135 89.2741 28.7659 87.6961L25.7286 85.0932C24.4043 86.6385 23.1888 88.0033 22.1496 89.1693L25.1356 91.8307ZM32.2975 83.4284C34.4382 80.7395 36.6882 77.7024 38.8115 74.4028L35.4478 72.2382C33.4139 75.3988 31.2472 78.3254 29.1681 80.9371L32.2975 83.4284ZM41.6887 69.6003C43.4861 66.3543 45.0915 62.9044 46.3128 59.3179L42.5263 58.0286C41.396 61.3479 39.8964 64.5799 38.1893 67.6626L41.6887 69.6003ZM47.8369 53.8243C48.2343 51.9536 48.5101 50.0534 48.6382 48.133L44.647 47.867C44.5327 49.5817 44.2855 51.2927 43.9242 52.993L47.8369 53.8243ZM48.6382 48.133C48.763 46.2603 48.7662 44.3715 48.6677 42.4828L44.6731 42.6911C44.7642 44.4375 44.7603 46.1672 44.647 47.867L48.6382 48.133ZM48.0976 36.9045C47.5458 33.2137 46.672 29.5635 45.6158 26.0694L41.7869 27.2267C42.7979 30.5713 43.6234 34.0302 44.1415 37.4959L48.0976 36.9045ZM43.863 20.8247C42.5172 17.1406 41.0261 13.704 39.5732 10.6692L35.9654 12.3966C37.3719 15.3343 38.8107 18.6518 40.1059 22.1972L43.863 20.8247ZM37.0829 5.75664C36.0681 3.86372 35.1319 2.2431 34.351 0.960106L30.9342 3.03989C31.6767 4.25982 32.5767 5.81712 33.5576 7.64665L37.0829 5.75664Z' fill='%230D3351'/%3E%3C/svg%3E%0A"), url("data:image/svg+xml, %3Csvg width='70' height='70' viewBox='0 0 70 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M36 59.2C49.3653 59.2 60.2 48.3653 60.2 35C60.2 21.6347 49.3653 10.8 36 10.8C22.6347 10.8 11.8 21.6347 11.8 35C11.8 48.3653 22.6347 59.2 36 59.2ZM36 60C49.8071 60 61 48.8071 61 35C61 21.1929 49.8071 9.99999 36 9.99999C22.1929 9.99999 11 21.1929 11 35C11 48.8071 22.1929 60 36 60Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M36.5 49C44.5081 49 51 42.5081 51 34.5C51 26.4919 44.5081 20 36.5 20C28.4919 20 22 26.4919 22 34.5C22 42.5081 28.4919 49 36.5 49ZM36.5 50C45.0604 50 52 43.0604 52 34.5C52 25.9396 45.0604 19 36.5 19C27.9396 19 21 25.9396 21 34.5C21 43.0604 27.9396 50 36.5 50Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.844 45.5086L25.5043 45.1422L36.25 34.3965V36.5631L25.844 45.5086ZM30.5491 40.8045L35.75 36.3335L35.75 35.6036L30.5491 40.8045Z' fill='%2337C8FD'/%3E%3Cpath d='M34.539 35.0127L25.5 45.5L36 35L34.539 35.0127Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.3106 45.3368L25.6768 45.6768L36.6089 34.7447L34.4236 34.7637L25.3106 45.3368ZM30.0965 40.5499L34.6545 35.2617L35.3912 35.2553L30.0965 40.5499Z' fill='%2337C8FD'/%3E%3Cpath d='M36.0127 36.461L46.5 45.5L36 35L36.0127 36.461Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46.3368 45.6894L46.6768 45.3232L35.7447 34.3912L35.7637 36.5764L46.3368 45.6894ZM41.5499 40.9035L36.2617 36.3456L36.2553 35.6089L41.5499 40.9035Z' fill='%2337C8FD'/%3E%3Cpath d='M37.461 34.9873L46.5 24.5L36 35L37.461 34.9873Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46.6894 24.6632L46.3232 24.3232L35.3912 35.2553L37.5764 35.2363L46.6894 24.6632ZM41.9035 29.4501L37.3456 34.7383L36.6089 34.7447L41.9035 29.4501Z' fill='%2337C8FD'/%3E%3Cpath d='M35.9873 33.539L25.5 24.5L36 35L35.9873 33.539Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.6632 24.3106L25.3232 24.6768L36.2553 35.6089L36.2363 33.4236L25.6632 24.3106ZM30.4501 29.0966L35.7383 33.6545L35.7447 34.3912L30.4501 29.0966Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46.5086 45.156L46.1422 45.4958L35.3965 34.75H37.563L46.5086 45.156ZM41.8045 40.451L37.3335 35.25H36.6036L41.8045 40.451Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46.156 24.4915L46.4958 24.8578L35.75 35.6036L35.75 33.437L46.156 24.4915ZM41.451 29.1955L36.25 33.6665L36.25 34.3965L41.451 29.1955Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.6725 25.0251L26.0388 24.6853L36.7846 35.4311H34.618L25.6725 25.0251ZM30.3765 29.7301L34.8475 34.9311H35.5775L30.3765 29.7301Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.48118 35.2493L7.5 34.75H36.6036L34.0956 37.2579L7.48118 35.2493ZM14.1344 35.25L33.9044 36.7421L35.3964 35.25H14.1344Z' fill='%2337C8FD'/%3E%3Cpath d='M33.9649 33L7 35L36 35L33.9649 33Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.98151 34.7507L7 35.25H36.6111L34.0594 32.7423L6.98151 34.7507ZM13.7505 34.75L33.8705 33.2577L35.3889 34.75H13.7505Z' fill='%2337C8FD'/%3E%3Cpath d='M34 37.0351L36 64L36 35L34 37.0351Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M35.7507 64.0185L36.25 64L36.25 34.3889L33.7423 36.9406L35.7507 64.0185ZM35.75 57.2495L34.2577 37.1295L35.75 35.611L35.75 57.2495Z' fill='%2337C8FD'/%3E%3Cpath d='M38.0351 37L65 35L36 35L38.0351 37Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M65.0185 35.2493L65 34.75H35.3889L37.9406 37.2577L65.0185 35.2493ZM58.2495 35.25L38.1295 36.7423L36.6111 35.25H58.2495Z' fill='%2337C8FD'/%3E%3Cpath d='M38 32.9649L36 5.99998L36 35L38 32.9649Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M36.2493 5.98149L35.75 5.99998L35.75 35.611L38.2577 33.0594L36.2493 5.98149ZM36.25 12.7505L37.7423 32.8704L36.25 34.3889L36.25 12.7505Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M36.2493 63.5188L35.75 63.5L35.75 34.3964L38.2579 36.9044L36.2493 63.5188ZM36.25 56.8656L37.7421 37.0956L36.25 35.6035L36.25 56.8656Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M64.5188 34.7507L64.5 35.25H35.3964L37.9044 32.7421L64.5188 34.7507ZM57.8656 34.75L38.0956 33.2579L36.6036 34.75H57.8656Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M35.7507 6.98117L36.25 6.99998L36.25 36.1035L33.7421 33.5956L35.7507 6.98117ZM35.75 13.6344L34.2579 33.4044L35.75 34.8964L35.75 13.6344Z' fill='%2337C8FD'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28.9142 18.4782L26.8983 14.2137L27.8024 13.7863L29.8183 18.0508L28.9142 18.4782ZM41.8871 17.7528L44.4886 13.818L45.3227 14.3695L42.7213 18.3043L41.8871 17.7528ZM48.0271 21.7218L51.4419 18.4678L52.1318 19.1917L48.7169 22.4457L48.0271 21.7218ZM23.5458 22.6846L20.2055 19.3541L20.9116 18.6459L24.2519 21.9765L23.5458 22.6846ZM52.0949 27.196L56.4096 25.2897L56.8137 26.2044L52.4991 28.1107L52.0949 27.196ZM19.735 28.924L15.735 26.424L16.265 25.576L20.265 28.076L19.735 28.924ZM52.1667 40.1882L56.1667 42.6882L55.6367 43.5362L51.6367 41.0362L52.1667 40.1882ZM19.8068 41.9163L15.4921 43.8225L15.088 42.9078L19.4027 41.0016L19.8068 41.9163ZM48.3559 46.4276L51.6962 49.7582L50.9901 50.4663L47.6498 47.1357L48.3559 46.4276ZM23.8747 47.3904L20.4598 50.6445L19.7699 49.9205L23.1848 46.6665L23.8747 47.3904ZM42.9875 50.634L45.0034 54.8985L44.0993 55.3259L42.0834 51.0614L42.9875 50.634ZM30.0146 51.3594L27.4132 55.2942L26.579 54.7427L29.1804 50.8079L30.0146 51.3594Z' fill='%2337C8FD'/%3E%3Cpath d='M6.6 32.74L5.262 37H4.41L3.318 34.09L2.25 37H1.392L0.0599976 32.74H0.989998L1.902 35.764L2.868 32.74H3.762L4.758 35.758L5.658 32.74H6.6Z' fill='%2337C8FD'/%3E%3Cpath d='M36.982 65.856C36.954 65.828 36.902 65.79 36.826 65.742C36.754 65.694 36.664 65.648 36.556 65.604C36.452 65.556 36.338 65.516 36.214 65.484C36.09 65.452 35.964 65.436 35.836 65.436C35.608 65.436 35.438 65.478 35.326 65.562C35.214 65.646 35.158 65.764 35.158 65.916C35.158 66.004 35.178 66.078 35.218 66.138C35.262 66.194 35.324 66.244 35.404 66.288C35.484 66.332 35.584 66.372 35.704 66.408C35.828 66.444 35.97 66.482 36.13 66.522C36.338 66.578 36.526 66.638 36.694 66.702C36.866 66.766 37.01 66.846 37.126 66.942C37.246 67.038 37.338 67.154 37.402 67.29C37.466 67.422 37.498 67.586 37.498 67.782C37.498 68.01 37.454 68.206 37.366 68.37C37.282 68.53 37.166 68.66 37.018 68.76C36.874 68.86 36.706 68.934 36.514 68.982C36.326 69.026 36.128 69.048 35.92 69.048C35.6 69.048 35.284 69 34.972 68.904C34.66 68.808 34.38 68.672 34.132 68.496L34.498 67.782C34.534 67.818 34.598 67.866 34.69 67.926C34.786 67.982 34.898 68.04 35.026 68.1C35.154 68.156 35.296 68.204 35.452 68.244C35.608 68.284 35.768 68.304 35.932 68.304C36.388 68.304 36.616 68.158 36.616 67.866C36.616 67.774 36.59 67.696 36.538 67.632C36.486 67.568 36.412 67.512 36.316 67.464C36.22 67.416 36.104 67.372 35.968 67.332C35.832 67.292 35.68 67.248 35.512 67.2C35.308 67.144 35.13 67.084 34.978 67.02C34.83 66.952 34.706 66.874 34.606 66.786C34.506 66.694 34.43 66.59 34.378 66.474C34.33 66.354 34.306 66.212 34.306 66.048C34.306 65.832 34.346 65.64 34.426 65.472C34.506 65.304 34.616 65.164 34.756 65.052C34.9 64.94 35.066 64.856 35.254 64.8C35.442 64.74 35.644 64.71 35.86 64.71C36.16 64.71 36.436 64.758 36.688 64.854C36.94 64.946 37.16 65.056 37.348 65.184L36.982 65.856Z' fill='%2337C8FD'/%3E%3Cpath d='M69.402 36.274V37H66.444V32.74H69.348V33.466H67.272V34.492H69.066V35.164H67.272V36.274H69.402Z' fill='%2337C8FD'/%3E%3Cpath d='M35.272 2.26999V4.99999H34.444V0.73999H35.086L37.306 3.53599V0.74599H38.134V4.99999H37.462L35.272 2.26999Z' fill='%2337C8FD'/%3E%3C/svg%3E%0A");
+*/
+    background-repeat: no-repeat;
+    background-position: center bottom, center 24px;
+    background-size: 45px 219px, 69px;
+}
+.heading__title {
+    width: 285px;
+    margin: 0 auto;
+    font-family: "Roboto Slab", Courier, monospace;
+    color: #fff;
+
+}
+.heading__title span {
+    display: block;
+    text-align: center;
+}
+.heading__title span:nth-of-type(1) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    font-style: normal;
+    letter-spacing: .055em;
+    margin-bottom: 11px;
+}
+.heading__title span:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 97.9%;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: -.025em;
+}
+.heading__btn {
+    margin: 40px auto 20px;
+}
+@media (min-width:760px) {
+    .heading__bg {
+    /* background-image: url(../images/title-tab.jpg); */
+    background-image: url(../images/109-min.jpg);
+    background-size: cover;
+    padding-top: 100px;
+}
+}@media (min-width:760px) and (-webkit-min-device-pixel-ratio:1.5), (min-width:760px) and (min-resolution:1.5dppx) {
+    .heading__bg {
+    /* background-image: url(../images/title-tab@2x.jpg); */
+    background-image: url(../images/109-min.jpg);
+}
+}@media (min-width:760px) {
+    .heading__wrapper {
+    
+    padding-top: 160px;
+    background-position: center bottom, center 130px;
+}
+.heading__title {
+    width: 740px;
+}
+.heading__title span:nth-of-type(1) {
+    font-size: 26px;
+}
+.heading__title span:nth-of-type(2) {
+    font-size: 70px;
+}
+.heading__btn {
+    margin-top: 20px;
+}
+}@media (min-width:1210px) {
+    .heading__bg {
+    background-image: url(../images/109-min.jpg);
+    background-size: cover;
+    margin-bottom: 70px;
+    padding-top: 220px;
+}
+
+.bg-fon {
+    background-color:rgba(0,0,0,.3);
+    height:100%;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+}@media (min-width:1210px) and (-webkit-min-device-pixel-ratio:1.5), (min-width:1210px) and (min-resolution:1.5dppx) {
+    .heading__bg {
+    /* background-image: url(../images/title-desk@2x.jpg); */
+    background-image: url(../images/109-min.jpg);
+}
+}@media (min-width:1210px) {
+    .heading__title {
+    width: 1140px;
+}
+.heading__title span:nth-of-type(1) {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.heading__title span:nth-of-type(2) {
+    font-size: 100px;
+}
+.heading__btn {
+    margin-top: 50px;
+}
+}
+
+.catalog {
+    padding-bottom: 30px;
+}
+.catalog__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Roboto Slab", Courier, monospace;
+    text-align: center;
+    color: #fd8800;
+    font-style: normal;
+    letter-spacing: .055em;
+}
+.catalog__sorting {
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    margin: 0 auto;
+}
+.catalog__sorting-text, .catalog__sorting__values {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Raleway", "Arial", sans-serif;
+    letter-spacing: .053em;
+}
+.catalog__sorting-text {
+    margin-right: 6px;
+    margin-left: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.catalog__sorting__values {
+    position: relative;
+    margin-right: auto;
+    padding-right: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+.catalog__sorting__values .catalog__sorting__icon--arrow {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+.catalog__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.catalog__item {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0.4em 0.4em 5px rgb(122 122 122 / 50%);
+    padding: 20px;
+    border-radius: 17px;
+}
+.catalog__item--desktop {
+    display: none;
+}
+.catalog__item-label {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 89px;
+    height: 83px;
+    padding: 10px;
+    z-index: 2;
+    background-color: #34c7fd;
+}
+.catalog__item-label::after, .catalog__item-label::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 15px solid #34c7fd;
+    border-bottom-color: transparent;
+    transform: scaleX(1.5) scaleY(.7);
+}
+.catalog__item-label::before {
+    left: 8px;
+    border-right-color: transparent;
+}
+.catalog__item-label::after {
+    right: 7px;
+    border-left-color: transparent;
+}
+.catalog__item-label--discount, .catalog__item-label--stock {
+    background-color: #f10341;
+}
+.catalog__item-label--discount::before {
+    border: 15px solid #f10341;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.catalog__item-label--discount::after {
+    border: 15px solid #f10341;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.catalog__item-label--stock::before {
+    border: 15px solid #f10341;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.catalog__item-label--stock::after {
+    border: 15px solid #f10341;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.catalog__item-label-text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Raleway", "Arial", sans-serif;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: .053em;
+}
+.catalog__item-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 7px;
+}
+.catalog-item__wrapper {
+    background-color: #fff;
+    padding: 10px;
+}
+.catalog__item-link {
+    display: block;
+    box-sizing: border-box;
+    padding-right: 40px;
+    position: relative;
+    min-height: 55px;
+}
+.catalog__item-link .catalog__item-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%) rotate(-90deg);
+    fill: #00a2dd;
+}
+.catalog__item-description {
+    margin-top: 10px;
+    min-height: 75px;
+}
+.catalog__item-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Roboto Slab", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .053em;
+    color: #00a2dd;
+}
+.catalog__item__part {
+    margin: 0 0 10px;
+    font-size: 13px;
+}
+.catalog__item-part-title {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: .043em;
+    color: #0d3351;
+}
+.catalog__item-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.catalog__item-price-current, .catalog__item-price-old {
+    font-family: "Roboto Slab", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.catalog__item-price-current {
+    font-size: 27px;
+    letter-spacing: .043em;
+    color: #0d3351;
+}
+.catalog__item-price-old {
+    font-size: 14px;
+    letter-spacing: -.037em;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    color: rgba(13, 51, 81, .54);
+}
+.catalog__btn {
+    margin: 5px auto 0;
+    position: relative;
+    padding: 15px 40px 15px 36px;
+    text-align: left;
+}
+.catalog__btn-arrow {
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    fill: #fff;
+}
+@media (min-width:760px) {
+    .page-header__user-link {
+        font-size: 14px
+    }
+    .catalog__title {
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.catalog__sorting .catalog__sorting-text, .catalog__sorting .catalog__sorting__values {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.catalog__list {
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.catalog__item {
+    width: 100%;
+    box-shadow: 0.4em 0.4em 5px rgb(122 122 122 / 50%);
+    padding: 20px;
+    border-radius: 17px;
+}
+.catalog__item-description {
+    width: 100%}
+.catalog__item-link .catalog__item-arrow {
+    top: 14px;
+}
+}
+@media (min-width:1210px) {
+    .catalog__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    
+}
+
+.catalog__list {
+    width: 700px;
+    margin-top: 25px;
+    /* display: grid;*/
+    grid-gap: 30px 30px;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-areas: "hit stock" "hit discount"}
+
+.catalog__item--desktop {
+    display: block;
+}
+.catalog__item {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0.4em 0.4em 5px rgb(122 122 122 / 50%);
+    padding: 20px;
+    border-radius: 17px;
+}
+
+
+.catalog__item-description, .catalog__item-link {
+    min-height: 0;
+}
+.catalog__btn {
+    margin-top: 25px;
+}
+
+}.page-header {
+    position: relative;
+    width: 100%}
+.page-header__close-btn, .page-header__open-btn {
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+}
+.page-header__close-btn {
+    display: block;
+    position: fixed;
+}
+.page-header__close-btn--about, .page-header__open-btn--about {
+    display: none;
+}
+.page-header__nav {
+    background-color: #fff;
+    position: fixed;
+    width: calc(100% - 170px);
+    padding: 37px 85px 39px;
+    z-index: 50;
+    max-height: 410px;
+    overflow: auto;
+}
+.page-header__container {
+    width: 155px;
+    margin: 0 auto;
+}
+.page-header__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: "Roboto Slab", Courier, monospace;
+    text-align: center;
+}
+.page-header__user-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 21px 0 0;
+}
+.page-header__user-item {
+    text-align: center;
+    margin-bottom: 34px;
+}
+.page-header__user-item:first-of-type {
+    width: 100%}
+.page-header__user-link {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Raleway", "Arial", sans-serif;
+    color: black;
+    font-style: normal;
+    letter-spacing: .045em;
+}
+.page-header__user-link .page-header__user-icon--arrow {
+    position: absolute;
+    top: 6px;
+    right: 1px;
+}
+.page-header__user-link .page-header__user-icon--rubl, .page-header__user-link .page-header__user-icon--user {
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+
+.page-header__about-item {
+    margin-bottom: 25px;
+}
+.page-header__link {
+    display: block;
+    text-align: center;
+}
+.page-header__phone {
+    text-align: center;
+    margin-top: 0px;
+
+}
+.page-header__social-list {
+    margin-top: 37px;
+    width: 160px;
+}
+
+.hide {
+    display: none;
+}
+@media (min-width:850px) {
+    .page-header__user-link {
+        font-size: 16px
+    }
+    .page-header {
+    background-color: transparent;
+}
+
+
+.page-header__open-btn {
+    display: none;
+}
+.page-header__nav {
+    background-color: white;
+    padding-top: 35px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    position: fixed;
+    left: calc(50% - 100%/2);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    backdrop-filter: saturate(300%) blur(20px);
+}
+.page-header__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-header__open-btn--about {
+    display: none;
+    top: 45px;
+    left: 30px;
+}
+.page-header__close-btn, .page-header__title {
+    display: none;
+}
+.page-header__user-menu {
+    margin: 0;
+}
+.page-header__user-item {
+    margin: 0 15px 0 0;
+}
+.page-header__user-item:last-of-type {
+    margin: 0;
+}
+.page-header__user-item:first-of-type {
+    width: auto;
+}
+.page-header__phone {
+    margin: 0 0 0 40px;
+    text-align: left;
+    display: none;
+}
+.page-header__about-menu-wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 55px rgba(0, 0, 0, .25);
+    position: absolute;
+    box-sizing: border-box;
+    padding: 37px 51px;
+    left: 15px;
+    top: 20px;
+}
+.page-header__about-menu-wrapper .page-header__close-btn--about {
+    display: block;
+}
+.page-header__about-menu .page-header__about-item:last-of-type {
+    margin-bottom: 0;
+}
+.page-header__about-menu .page-header__link {
+    text-align: left;
+}
+.page-header__social-list {
+    display: none;
+}
+}@media (min-width:1210px) {
+    .page-header__nav {
+    width: 100%;
+    left: calc(50% - 100%/2);
+}
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 6px;
+}
+.page-footer__about-menu {
+    display: none;
+}
+.page-footer__text {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.page-footer__social-list {
+    order: 2;
+    width: 103px;
+    margin-bottom: 15px;
+}
+.page-footer__phone {
+    order: 3;
+    text-align: center;
+}
+.page-footer__phone .page-footer__number {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .05em;
+}
+.page-footer__copy, .page-footer__phone .page-footer__number, .page-footer__phone .page-footer__text, .page-footer__text {
+    
+    line-height: 1.5;
+    font-family: "Raleway", "Arial", sans-serif;
+    color: #0d3351;
+    font-style: normal;
+}
+.page-footer__phone .page-footer__text {
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: .045em;
+    margin-bottom: 0;
+}
+.page-footer__copy, .page-footer__text {
+    font-size: 14px;
+}
+.page-footer__copy {
+    order: 4;
+    margin-bottom: 0;
+    padding-bottom: 23px;
+    margin-top: 6px;
+    font-weight: 500;
+    letter-spacing: .005em;
+}
+.page-footer__text {
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+@media (min-width:760px) {
+    .page-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 720px;
+    margin: 0 auto;
+}
+.page-footer__about-menu {
+    display: block;
+}
+.page-footer__text {
+    margin-bottom: 10px;
+}
+.page-footer__phone {
+    text-align: left;
+}
+.page-footer__number {
+    padding-top: 2px;
+    margin-bottom: 0;
+}
+.page-footer__about-item {
+    margin-bottom: 2px;
+}
+.page-footer__about-item:last-of-type {
+    margin-bottom: 0;
+}
+.page-footer__wrapper--phone {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+}@media (min-width:1210px) {
+    .page-footer {
+    width: 1140px;
+    justify-content: flex-start;
+}
+.page-footer__wrapper {
+    margin-left: 330px;
+}
+.page-footer__wrapper--phone {
+    margin-left: auto;
+}
+
+#menu {
+    background-color: white;
+    position: fixed;
+    width:100%;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    backdrop-filter: saturate(300%) blur(20px);
+}
+
+   
+.page-header__user-link {
+    font-size: 19px
+
+}
+}
+
+/* Собственно сам слайдер */
+.slider{
+    max-width: 100%;
+    position: relative;
+    
+    height: 300px;
+    margin-bottom: 130px;
+    margin: auto;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+
+/* Кружочки */
+
+.slider-dots {
+  text-align: center;
+ 
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+
+/* Анимация слайдов */
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/* ____________________________________________________________________________________________________________________________ */
+
+/* Собственно сам слайдер */
+.slider1{
+    max-width: 100%;
+    position: relative;
+    
+    height: 300px;
+    margin-bottom: 130px;
+    margin: auto;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider1 .item1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/* Кнопки вперед и назад */
+.slider1 .prev1, .slider1 .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.slider1 .next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.slider1 .prev1:hover,
+.slider1 .next1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Заголовок слайда */
+.slideText1 {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+
+/* Кружочки */
+
+.slider-dots1 {
+  text-align: center;
+ 
+}
+.slider-dots_item1{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item1:hover {
+    background-color: #aaa;
+}
+
+
+/* Анимация слайдов */
+
+.slider1 .item1 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+a:hover {
+    color: #fd8800;}
+    a:focus {
+        color: #fd8800;}
+
+        .page-footer__number:hover {
+            color: #fd8800;}
+            .page-footer__number:focus {
+                color: #fd8800;}
